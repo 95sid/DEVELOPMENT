@@ -4,7 +4,7 @@
 
 let name = "Siddhant" // String
 let age = 18 // age range(-2^53-1 to 2^53-1)
-//  bigInt for large numbers such as trading or stock market 
+// bigInt for large numbers such as trading or stock market 
 let isLoggedIn = false // boolean 
 // null --> it is datatype as well as standalone value (it is repersentaion of an empty value)
 // null is a object type 

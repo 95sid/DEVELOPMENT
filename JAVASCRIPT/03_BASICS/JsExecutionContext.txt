@@ -1,0 +1,61 @@
+(JAVASCRIPT is single threaded language)
+
+JAVASCRIPT EXECUTION CONTEXT  ==> How javascript runs our file 
+THERE ARE 3 TYPES OF EXECUTION CONTEXT
+1 --> GEC (Global EXECUTION CONTEXT) created and it is stored inside this keyword
+GEC depends on the environment in Browser it is Windows, Similarly In NodeJs it is different 
+
+2- FUNCTIONAL EC
+
+3- EVAL EC ==> It is a property of Global Object 
+
+==> Generally javascript runs our file/code in 2 phases 
+
+1 --> MEMORY CREATION PHASE ==> it allocates the memory to variable 
+2 --> EXECUTION PHASE ==> it does the calculation (such as mathematical calculations)  
+
+....Code....
+let val1 = 10
+let val2 = 5
+function addNum(num1,num2){
+    let total = num1+num2;
+    return total
+}
+let result1 = addNum(val1,val2)
+let result2 = addNum(10,2)
+
+1-- Global EXECUTION
+2-- MEMORY phases(1st cycle)
+    val1 = undefined
+    val2 = undefined
+    addnum(defination)
+    result1 = undefined
+    result2 = undefined
+
+3--EXECUTION PHASE
+    val1 = 10
+    val2 = 5
+    addNum() --> Creates New EXECUTION Context it will created for every execution of a function 
+    Consist of (new variable environment + execution thread)
+    so both phases will be again executed for addNum function 
+    1--> MEMORY PHASE 
+        num1 = undefined
+        num2 = undefined
+        total = undefined
+
+    2-->EXECUTION PHASE
+        num1 = 10
+        num2 = 5
+        total = 10+5 = 15
+        (return 15) This is returned in Global EXECUTION Context 
+After the completion of function executional context it gets deleted and again created if function is called 
+so it is again created for addNum(10,2) 
+Like this a Code in JAVASCRIPT gets executed
+
+/*************************Call Stack********************************/
+
+|                | 
+|                |
+|   FUNCTION 2   |
+|   FUNCTION 1   |
+|Global EXECUTION|
