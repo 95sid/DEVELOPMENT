@@ -1,0 +1,1 @@
+ateStyle:"full"
