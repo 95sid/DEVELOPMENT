@@ -12,4 +12,4 @@
 //IIFE ARROW FUNCTION
 ((name)=>{
     console.log(`DB CONNECTED TWO ${name}`);
-})("Siddhant");
+})("Siddhant");//==> Fuction call;

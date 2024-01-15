@@ -1,1 +1,1 @@
-Javascript is defualt scripting language in html
+Javascript is default scripting language in html

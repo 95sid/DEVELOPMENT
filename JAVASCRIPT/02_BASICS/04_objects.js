@@ -33,7 +33,7 @@ const obj3 = Object.assign({}, obj1, obj2); //can also give more than two object
 // console.log(tinderUser.hasOwnProperty('name1')) // return true or false
 
 const course = {
-  courseName: "js in hind",
+  courseName: "js in hindi",
   coursePrice: "999",
   courseInstructor: "hitesh",
 };

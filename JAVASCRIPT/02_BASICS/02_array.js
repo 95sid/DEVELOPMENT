@@ -19,7 +19,7 @@ const new_another_Array = anotherArray.flat(Infinity);
 // console.log(new_another_Array); // [1,2,3,4,5,6,7,8,9]
 
 // console.log(Array.isArray("Siddhant")); // tells is it array or not?
-// console.log(Array.from("Siddhant")); // converts array like objects
+// console.log(Array.from("Siddhant")); // converts array like objects ['S','i',...'t']
 //  [nodelist,string or object] into array
 
 console.log(Array.from({name:"Siddhant"})); // [] because in this case it is not able to 

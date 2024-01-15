@@ -8,7 +8,7 @@ var accountPassword = "12345"
 let accountState // Output --> undefined 
 accountCity = "Chandigarh" // don't prefer 
 
-// accountId = 12456 --> NOT ALLOWED 
+// accountId = 12456 --> NOT ALLOWED because it has const datatype 
 
 accountEmail = "gupta@gmail.com"
 accountPassword = "4324"
