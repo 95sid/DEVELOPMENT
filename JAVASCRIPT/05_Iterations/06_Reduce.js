@@ -25,6 +25,7 @@ const shoppingCart = [
 ]
 
 // const total = shoppingCart.reduce((acc,item)=>acc+item.price,0);
+// acc will be final value in which all value be added 
 const total = shoppingCart.reduce((acc,item)=>{
     console.log(`${item.itemName} and ${item.price}`)
     return acc+item.price;

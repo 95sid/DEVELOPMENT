@@ -30,10 +30,12 @@ for (const [key,value] of map) { // Can print key and value seperately
     // console.log(key,"->",value)
 }
 
+// doesn't work on Obj
 const myObj = {
     'game1':"NFS",
     'game2':"SpiderMan"
 }
+
 for (const [key,value] of myObj) { // gives Error because Object is not iteratable with forOf loops 
     // console.log(key,value) 
 }
