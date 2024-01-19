@@ -17,3 +17,35 @@ buttons.forEach((button)=>{
   })
 })
 ```
+
+
+## project2 
+```
+const form = document.querySelector('form')
+
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+  const height = parseInt(document.querySelector("#height").value);
+  const weight = parseInt(document.querySelector("#weight").value);
+  const result = document.querySelector("#results");
+  if(height<=0 || height == '' || isNaN(height)){
+    result.innerHTML = "Please Enter the Valid Value"
+  }
+  else if(weight<=0 || weight == '' || isNaN(weight)){
+    result.innerHTML = "Please Enter the Valid Value"
+  }
+  else{
+    const bmi = (weight/(height*height)).toFixed(2);
+    if(bmi < 18.6){
+      result.innerHTML = `Your BMI is ${bmi} </br> You are Underweight`
+    }
+    else if(bmi >= 18.6 && bmi <= 24.6){
+      result.innerHTML = `Your BMI is ${bmi} </br> You are in Normal Range`
+    }
+    else{
+      result.innerHTML = `Your BMI is ${bmi} </br> You are overweight`
+    }
+  }
+  form.reset();
+})
+```
