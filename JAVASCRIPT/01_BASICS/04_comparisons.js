@@ -12,6 +12,7 @@ console.log(null >= 0) // true
 // because comparisons convert the null into number 0 so when we do >= it returns true 
 // for > it returns false
 
-// === (strict check) check value as well as datatype 
 console.log("2" == 2) //true
+
+// === (strict check) check value as well as datatype 
 console.log("2" === 2) //false ==> because datatype for both variable is different

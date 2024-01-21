@@ -1,1 +1,3 @@
 Javascript is default scripting language in html
+in Javascript all programs runs sequentially 
+there are some exceptions such as Ascyncronous programming and browser events
