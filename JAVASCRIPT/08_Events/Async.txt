@@ -1,0 +1,21 @@
+JavaScript(Default JS behaviour)
+--> Single Threaded == Everything will get executed on a single thread
+(Each operation waits for the last one to complete before Executing)
+--> Synchronous == one codeblock Execute at a time 
+
+Execution Context ==> it is Single thread 
+
+Blocking code VS Non Blocking code 
+    ||               ||
+Block the flow   Does not block the 
+of Programe       Execution 
+    ||               ||
+Read File Sync   Read File Async(other programe will be Executing Simulataneously) 
+                 For DB read we doesn't want to execute other code until we get 
+                 complete response from DB.So in this case we will use Blocking Code.
+
+Browser doesn't have capability to read file 
+but NodeJs has capability to read 
+
+
+Js Engine ==> Memory Heap + Call Stack

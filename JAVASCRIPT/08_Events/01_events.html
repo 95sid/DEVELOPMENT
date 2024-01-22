@@ -79,18 +79,26 @@
     //   },
     //   true
     // );
-    
+
     /*Project Based Learning*/
     /*Click on the Image and Image should be invisible*/
-    document.querySelector('#images').addEventListener('click',function(e){
-        console.log(e.target)
-    })
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.parentNode); // becasue if we remove image only then there will be ul dot
+      let tagName = e.target.tagName;
+      if (e.target.tagName == "IMG") {
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+      }
+
+      // removeIt.remove(); // there will be problem if i click on ul because parent of ul is li, it will remove all of them at once
+
+      // removeIt.parentNode.removeChile(removeIt)
+    });
 
     /*Notes*/
     // when i will click on owl then both event will occur because owl is a ul which is
     // part of images
     // first owl will print because event propagation is false so it will follow the
     // Event Bubbling,in Event Bubbling the first child will occur then parent
-
   </script>
 </html>

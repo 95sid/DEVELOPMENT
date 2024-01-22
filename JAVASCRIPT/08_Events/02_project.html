@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    /*setTimeout ==> Print One time*/
+    // setTimeout(function(){
+    //     console.log("Siddhant")
+    // },2000)
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "BESt JS Series "
+    }
+    const button = document.querySelector("#stop");
+    const StopMe = setTimeout(changeText,2000);
+    button.addEventListener('click',function(e){
+        clearTimeout(StopMe); // it needs refrence for setTimeout we want to stop 
+        button.textContent = "Stopped";
+    },false);
+  </script>
+</html>
