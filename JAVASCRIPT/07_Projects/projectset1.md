@@ -2,11 +2,11 @@
 
 ## project link
 
-[click here] (https://stackblitz.com/edit/dom-project-chaiaurcode-qb1yoc?file=1-colorChanger%2Fchaiaurcode.js)
+[click here](https://stackblitz.com/edit/dom-project-chaiaurcode-qb1yoc?file=1-colorChanger%2Fchaiaurcode.js)
 
 # Solution Code
 
-## Project1
+## Project 1
 
 ```
 const buttons = document.querySelectorAll('.button');
@@ -21,7 +21,7 @@ buttons.forEach((button)=>{
 })
 ```
 
-## Project2
+## Project 2
 
 ```
 const form = document.querySelector('form')
