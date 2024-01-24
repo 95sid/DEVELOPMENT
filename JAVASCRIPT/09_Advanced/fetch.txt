@@ -1,0 +1,2 @@
+Fetch will execute first becasue it has its on queue which is having high priority 
+after Fetch all code will get executed which is present in task queue
