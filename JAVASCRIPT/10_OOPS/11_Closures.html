@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    //   function init() {
+    //     let name = "Mozilla";
+    //     function displayName() {
+    //       console.log(name);
+    //     }
+    //     return displayName();
+    //   }
+    //   const myFunc = init(); // it will get complete lexical Scope of outer funciton in muFunc variable
+    //   myFunc();
+
+    // document.querySelector("#orange").onclick = function(){
+    //     document.body.style.backgroundColor = "Orange";
+    // }
+    // document.querySelector("#green").onclick = function(){
+    //     document.body.style.backgroundColor = "Green";
+    // }
+    function clickHandler(color) {
+      //   document.body.style.backgroundColor = `${color}`;
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }
+    document.getElementById("orange").onclick = clickHandler("Orange"); // it will not run
+    document.getElementById("green").onclick = clickHandler("Green"); // it will not run
+    // because it requries function as return type so here we uses concept of closures
+  </script>
+</html>
