@@ -3,7 +3,7 @@
 ### Prototype behaviour means that Js doesn't give up so easily it searches for value layer by layer towards up side (parent->grandParent->grand-grandParent) until it got null.
 ### because of this behaviour we got this keyword,intheritence,classes etc. in JS.  
 ## Array --> Object --> NULL(here prototype stops)
-## Everything in JS is object.Function is also a object. function may behave like an object. 
+## Everything in JS is object.Function is also a object.it may behave like an object. 
 
 ```
 function multiply5(num){
