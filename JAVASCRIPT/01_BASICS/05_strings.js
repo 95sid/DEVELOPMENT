@@ -7,7 +7,7 @@ let repoCount = 50;
 
 
 const gameName = new String("noBbie75"); //provides multiple method 
-console.log(gameName[0].__proto__)
+console.log(gameName[0].__proto__) //provides multiple method 
 console.log(gameName.length)
 console.log(gameName.toUpperCase())
 console.log(gameName.toLowerCase())
