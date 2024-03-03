@@ -13,8 +13,8 @@ function msToTime(elapsedTime) {
     (milliseconds > 9 ? milliseconds : "0" + milliseconds)
   );
 }
-let startTime = 0;
-let elapsedTime = 0;
+let startTime = 0; // user start
+let elapsedTime = 0; // starttime - currenttime
 let intervalid;
 function startTimer() {
   startTime = Date.now() - elapsedTime;
