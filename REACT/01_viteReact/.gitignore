@@ -9,7 +9,7 @@ lerna-debug.log*
 package-lock.json
 package.json
 .eslintrc.cjs
-
+.gitignore
 
 node_modules
 dist
