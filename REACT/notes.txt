@@ -11,3 +11,4 @@ both are also utility/software
 
 Bundler : it is a tool that takes all JS code, along with any other assets like CSS or images, 
           and combines them into a single file (or a few files) that can be served to the browser
+          Responsible for converting/parsing the all jsx code behind into JS format 
