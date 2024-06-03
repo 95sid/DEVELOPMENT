@@ -13,8 +13,8 @@
     .render() is used to modify the element it will override the dom.
 `
 
-` 
-        <h1 id = "title">Heading 1</h1> 
+**
+       <h1 id = "title">Heading 1</h1> 
       const heading = React.createElement(
         "h1",
         {
@@ -41,5 +41,4 @@
         },
         [heading,heading2]
       );
-
-`
+**
