@@ -7,10 +7,10 @@
 
 ### Structure : It is not used because it is complex so we use JSX.(Just For Knowledge)
 ```
-    const heading = React.createElement("h1", {}, "Namaste React !!");
-    heading (React Element ) is an Object 
-    React also works with HTML tags and maintains the order 
-    .render() is used to modify the element it will override the dom.
+   1- const heading = React.createElement("h1", {}, "Namaste React !!");
+   2- heading (React Element ) is an Object 
+   3- React also works with HTML tags and maintains the order 
+   4- .render() is used to modify the element it will override the dom.
 
 ```
 
