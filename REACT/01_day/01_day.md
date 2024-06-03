@@ -31,10 +31,10 @@
         },
         "Heading 2"
       );
-        <div id = "container">
+       ** <div id = "container">
             <h1 id = "title">Heading 1</h1> 
             <h2 id = "title">Heading 2</h2>
-        </div>
+        </div> **
       const container = React.createElement(
         "div",
         {
