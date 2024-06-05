@@ -1,3 +1,8 @@
+// string are immutable 
+// Immutable : can not change after creation 
+// we can not change the string if we modify the string actually we are 
+// creating a new string  
+// mutable : can change after creation ex. object, arrays 
 let name = "Siddhant";
 let repoCount = 50;
 // console.log(name+repoCount+" value"); // ==> Not Prefrable

@@ -7,6 +7,7 @@
     "boolean" => 0/1
 
 */
+
 /*
     conversion in boolean
     1 ==> true
